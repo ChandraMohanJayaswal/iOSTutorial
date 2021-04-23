@@ -1,0 +1,13 @@
+@MapView
+https://medium.com/fabcoding/swift-display-route-between-2-locations-using-mapkit-7de8ee0acd38
+https://www.tech-prastish.com/blog/understanding-maps-mkdirections-api/
+
+
+
+
+@Trust issue
+To solve this issue on the device, go to Settings > General > Profiles or Settings > General > Device Management, depending on the device type and the iOS version. There, trust the developer and allow the apps to be run.
+
+
+@XCode Format Code
+https://stackoverflow.com/questions/6543026/how-to-format-code-in-xcode

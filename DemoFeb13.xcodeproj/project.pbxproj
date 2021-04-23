@@ -14,6 +14,7 @@
 		97644B5125E0BA8F00A1FF82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97644B5025E0BA8F00A1FF82 /* User.swift */; };
 		97644B5625E0BB3000A1FF82 /* Validateion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97644B5525E0BB3000A1FF82 /* Validateion.swift */; };
 		97644B5B25E0BC6A00A1FF82 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97644B5A25E0BC6A00A1FF82 /* Util.swift */; };
+		97807BD026332CDE00F92CA3 /* Reference in Resources */ = {isa = PBXBuildFile; fileRef = 97807BCF26332CDE00F92CA3 /* Reference */; };
 		97816C0525D76D0500D1C605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97816C0425D76D0500D1C605 /* AppDelegate.swift */; };
 		97816C0725D76D0500D1C605 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97816C0625D76D0500D1C605 /* SceneDelegate.swift */; };
 		97816C0C25D76D0500D1C605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97816C0A25D76D0500D1C605 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		9779146D262A853D00401913 /* Gokarneshwor.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gokarneshwor.gpx; sourceTree = "<group>"; };
 		9779146E262A857200401913 /* Koteshwor.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Koteshwor.gpx; sourceTree = "<group>"; };
 		9779146F262A85BB00401913 /* Baneshwor.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Baneshwor.gpx; sourceTree = "<group>"; };
+		97807BCF26332CDE00F92CA3 /* Reference */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reference; sourceTree = "<group>"; };
 		97816C0125D76D0500D1C605 /* DemoFeb13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFeb13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97816C0425D76D0500D1C605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97816C0625D76D0500D1C605 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				9747B0E2262A7785003E0FD3 /* CSY3029-A2-2021.pdf */,
 				97644B4725E0B6E800A1FF82 /* Constants.swift */,
 				97644B5A25E0BC6A00A1FF82 /* Util.swift */,
+				97807BCF26332CDE00F92CA3 /* Reference */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				97816C1125D76D0800D1C605 /* LaunchScreen.storyboard in Resources */,
 				97816C0E25D76D0800D1C605 /* Assets.xcassets in Resources */,
+				97807BD026332CDE00F92CA3 /* Reference in Resources */,
 				9747B0E3262A7785003E0FD3 /* CSY3029-A2-2021.pdf in Resources */,
 				97816C0C25D76D0500D1C605 /* Main.storyboard in Resources */,
 				97A6F40325E9EC8400686E5C /* Home.storyboard in Resources */,
