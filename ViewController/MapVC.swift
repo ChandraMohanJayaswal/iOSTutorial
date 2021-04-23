@@ -28,8 +28,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     var timer: Timer!
     
     //Destination is considered as Singha Durbar
-    var destinationLat = 27.6980136
-    var destinationLon = 85.3238935
+    var destinationLat = 27.697330
+    var destinationLon = 85.326515
     
     //Current Location Test Data
     //Gokarneshwor  27.7639386, 85.347967
@@ -68,13 +68,12 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         /* from source to destination. */
         
         let request = MKDirections.Request()
-        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude:30.711378, longitude:76.688981), addressDictionary: nil))
-//        request.source = MKMapItem.forCurrentLocation()
-
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 30.710653, longitude: 76.694814), addressDictionary: nil))
+//        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude:30.711378, longitude:76.688981), addressDictionary: nil))
+//
+//        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 30.710653, longitude: 76.694814), addressDictionary: nil))
         
-        //            request.source = MKMapItem.forCurrentLocation()
-        //            request.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate, addressDictionary: nil))
+        request.source = MKMapItem.forCurrentLocation()
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate, addressDictionary: nil))
         /* Then we need to specify the transport */
         /* type which is either .automobile .walking */
         /* transit any Default any */
