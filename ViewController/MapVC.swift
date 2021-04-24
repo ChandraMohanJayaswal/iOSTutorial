@@ -23,7 +23,6 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     let motionManager = CMMotionManager()
     var locationManager: CLLocationManager? = nil
-    var currentLocation:CLLocationCoordinate2D? = nil
     
     var timer: Timer!
     
@@ -47,7 +46,6 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     func loadMapView() {
         self.locationManager = CLLocationManager()
         self.locationManager!.requestWhenInUseAuthorization()
-        self.locationManager!.requestWhenInUseAuthorization()
         self.mapView.showsUserLocation = true
         self.mapView.delegate = self
         if CLLocationManager.locationServicesEnabled() {
@@ -68,12 +66,12 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         /* from source to destination. */
         
         let request = MKDirections.Request()
-//        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude:30.711378, longitude:76.688981), addressDictionary: nil))
-//
-//        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 30.710653, longitude: 76.694814), addressDictionary: nil))
+        request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude:30.711378, longitude:76.688981), addressDictionary: nil))
+
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 30.710653, longitude: 76.694814), addressDictionary: nil))
         
-        request.source = MKMapItem.forCurrentLocation()
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate, addressDictionary: nil))
+//        request.source = MKMapItem.forCurrentLocation()
+//        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate, addressDictionary: nil))
         /* Then we need to specify the transport */
         /* type which is either .automobile .walking */
         /* transit any Default any */
@@ -86,7 +84,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         /* set the requestsAlternateRoutes to true. */
         /* By default is no */
         
-        request.requestsAlternateRoutes = true
+        request.requestsAlternateRoutes = false
         
         /* Then we need to create MKDirections */
         /* object by passing the request as parameter. */
@@ -94,6 +92,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         /* route(s) from starting point to end point */
         
         let directions = MKDirections(request: request)
+        
+
         
         directions.calculate { (response, error) in
             if error != nil {
@@ -123,6 +123,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
                 index += 1
                 self.mapView.addOverlay(route.polyline)
 //                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+//                break
             }
         }
     }
@@ -173,12 +174,9 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
             
         }
         
-        if self.currentLocation != nil {
-            let destintionLocation:CLLocationCoordinate2D = CLLocationCoordinate2D.init(latitude: destinationLat, longitude: destinationLon)
-            //            self.showRouteOnMap(pickupCoordinate: self.currentLocation!, destinationCoordinate: destintionLocation)
-            self.drawRoute(destinationCoordinate: destintionLocation)
-            
-        }
+        let destintionLocation:CLLocationCoordinate2D = CLLocationCoordinate2D.init(latitude: destinationLat, longitude: destinationLon)
+        //            self.showRouteOnMap(pickupCoordinate: self.currentLocation!, destinationCoordinate: destintionLocation)
+        self.drawRoute(destinationCoordinate: destintionLocation)
     }
     
     // MARK: -
@@ -267,8 +265,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         //        self.mapView.centerToLocation(location)
         
         
-        self.currentLocation = manager.location!.coordinate
-        print("Current locations = \(currentLocation!.latitude) \(currentLocation!.longitude)")
+        var currentLocation = manager.location!.coordinate
+        print("Current locations = \(currentLocation.latitude) \(currentLocation.longitude)")
         
         
     }
