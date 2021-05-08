@@ -59,6 +59,27 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         self.locationManager!.stopUpdatingLocation()
     }
     
+    func showGForceAlert(){
+        let alert = UIAlertController(title: "Alert", message: "Vehicle GForce value is exceeded.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alertAction) in
+            switch alertAction.style{
+                case .default:
+                    print("default")
+                
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                @unknown default:
+                    print("unknown")
+            }
+        }))
+        self.present(alert, animated: true) {
+            //If anything need to do after presenting alert view then do here otherwise just ignore it.
+        }
+    }
+    
     func drawRoute(destinationCoordinate: CLLocationCoordinate2D){
         /* First we need to create MKDirections */
         /* request object and then we modify it */
@@ -166,6 +187,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
             self.lblGForceInfo.text = "x = \(gyroData.rotationRate.x)\ny = \(gyroData.rotationRate.y)\nz = \(gyroData.rotationRate.z)\nGforce = \(currentGForce)"
             if currentGForce > self.thtresholdGForce {
                 //Show alert message -- UIAlertView
+                self.showGForceAlert()
             }
         }
         
