@@ -44,9 +44,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPJ-v0-HIu" userLabel="viewControl">
                                 <rect key="frame" x="0.0" y="629" width="414" height="184"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-OZ-Pof" userLabel="sliderGForce">
-                                        <rect key="frame" x="8" y="27" width="400" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-OZ-Pof" userLabel="sliderGForce">
+                                        <rect key="frame" x="6" y="27" width="402" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="GBK-9r-xJa"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="sliderGForceValueChanged:" destination="OfX-Jg-kdA" eventType="valueChanged" id="gGB-y9-P8f"/>
                                         </connections>
@@ -61,7 +63,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1R-i1-vJj" userLabel="lblGForceCurrent">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1R-i1-vJj" userLabel="lblGForceCurrent">
                                         <rect key="frame" x="177" y="8" width="60" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="P4m-fU-G8y"/>
@@ -71,11 +73,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF1-8B-HZu" userLabel="lblGForceMax">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF1-8B-HZu" userLabel="lblGForceMax">
                                         <rect key="frame" x="346" y="8" width="60" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="DLa-IL-WlG"/>
                                             <constraint firstAttribute="width" constant="60" id="Ywk-qh-dR4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u65-3I-4UU" userLabel="lblGForceInfo">
+                                        <rect key="frame" x="8" y="64" width="398" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="kpU-an-2JQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -86,11 +97,17 @@
                                 <constraints>
                                     <constraint firstItem="Fd0-Pa-bxK" firstAttribute="leading" secondItem="fPJ-v0-HIu" secondAttribute="leading" constant="8" id="7ev-XI-1E7"/>
                                     <constraint firstItem="H1R-i1-vJj" firstAttribute="top" secondItem="fPJ-v0-HIu" secondAttribute="top" constant="8" id="A5Y-lL-tba"/>
+                                    <constraint firstItem="Sve-OZ-Pof" firstAttribute="top" secondItem="fPJ-v0-HIu" secondAttribute="top" constant="27" id="R7Q-m1-77e"/>
                                     <constraint firstItem="LF1-8B-HZu" firstAttribute="top" secondItem="fPJ-v0-HIu" secondAttribute="top" constant="8" id="SSC-LD-xfw"/>
                                     <constraint firstItem="Fd0-Pa-bxK" firstAttribute="top" secondItem="fPJ-v0-HIu" secondAttribute="top" constant="8" id="ayC-zp-hx9"/>
                                     <constraint firstItem="H1R-i1-vJj" firstAttribute="centerX" secondItem="fPJ-v0-HIu" secondAttribute="centerX" id="dfC-Vv-9Ec"/>
                                     <constraint firstAttribute="height" constant="184" id="f35-9g-Itf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sve-OZ-Pof" secondAttribute="trailing" constant="8" id="jKS-LQ-m5W"/>
+                                    <constraint firstAttribute="trailing" secondItem="u65-3I-4UU" secondAttribute="trailing" constant="8" id="jtx-jP-GaJ"/>
+                                    <constraint firstItem="u65-3I-4UU" firstAttribute="leading" secondItem="fPJ-v0-HIu" secondAttribute="leading" constant="8" id="kiu-uP-J1f"/>
                                     <constraint firstAttribute="trailing" secondItem="LF1-8B-HZu" secondAttribute="trailing" constant="8" id="o9J-6s-mi5"/>
+                                    <constraint firstItem="Sve-OZ-Pof" firstAttribute="leading" secondItem="fPJ-v0-HIu" secondAttribute="leading" constant="8" id="sSp-WN-57R"/>
+                                    <constraint firstItem="u65-3I-4UU" firstAttribute="top" secondItem="Sve-OZ-Pof" secondAttribute="bottom" constant="8" symbolic="YES" id="zYY-6p-P9d"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -112,6 +129,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="person" catalog="system" id="kER-Ph-rEn"/>
                     <connections>
                         <outlet property="lblGForceCurrent" destination="H1R-i1-vJj" id="LKb-kc-21a"/>
+                        <outlet property="lblGForceInfo" destination="u65-3I-4UU" id="XyS-FX-qj0"/>
                         <outlet property="lblGForceMax" destination="LF1-8B-HZu" id="ERY-6M-xTM"/>
                         <outlet property="lblGForceMin" destination="Fd0-Pa-bxK" id="61f-lK-u7s"/>
                         <outlet property="mapView" destination="Q9P-No-m89" id="OxV-mv-S8K"/>

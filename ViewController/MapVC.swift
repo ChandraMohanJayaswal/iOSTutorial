@@ -18,7 +18,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     @IBOutlet weak var lblGForceMin: UILabel!
     @IBOutlet weak var lblGForceCurrent: UILabel!
     @IBOutlet weak var lblGForceMax: UILabel!
-    
+    @IBOutlet weak var lblGForceInfo: UILabel!
     
     
     let motionManager = CMMotionManager()
@@ -160,9 +160,10 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     @objc func update() {
         print("Calling update method")
         if let gyroData = motionManager.gyroData {
-            print("Gyroscope Data: \(gyroData)")
             var currentGForce = sqrt(gyroData.rotationRate.x * gyroData.rotationRate.x + gyroData.rotationRate.y * gyroData.rotationRate.y + gyroData.rotationRate.z * gyroData.rotationRate.z)
             
+            print("Gyroscope Data: \(gyroData) \t CurrentGForce: \(currentGForce)")
+            self.lblGForceInfo.text = "x = \(gyroData.rotationRate.x)\ny = \(gyroData.rotationRate.y)\nz = \(gyroData.rotationRate.z)\nGforce = \(currentGForce)"
             if currentGForce > self.thtresholdGForce {
                 //Show alert message -- UIAlertView
             }
@@ -187,9 +188,13 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     // MARK: IBAction Methods Methods
     
     @IBAction func sliderGForceValueChanged(_ sender: Any) {
-        self.lblGForceMin.text = "\(self.sliderGForce.minimumValue)"
-        self.lblGForceCurrent.text = "\(self.sliderGForce.value)"
-        self.lblGForceMax.text = "\(self.sliderGForce.maximumValue)"
+        let minValue = self.sliderGForce.minimumValue
+        let currentValue = self.sliderGForce.value
+        let maxValue = self.sliderGForce.maximumValue
+        
+        self.lblGForceMin.text = String(format: "%.0f", minValue)
+        self.lblGForceCurrent.text = String(format: "%.2f", currentValue)
+        self.lblGForceMax.text = String(format: "%.0f", maxValue)
         self.thtresholdGForce = Double(self.sliderGForce.value)
         
     }
