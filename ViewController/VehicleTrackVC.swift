@@ -1,5 +1,5 @@
 //
-//  MapVC.swift
+//  VehicleTrackVC.swift
 //  DemoFeb13
 //
 //  Created by Chandra Jayaswal on 2/27/21.
@@ -11,7 +11,7 @@ import CoreLocation
 import CoreMotion
 
 
-class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class VehicleTrackVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var sliderGForce: UISlider!
@@ -222,6 +222,20 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     }
     
     
+    @IBAction func btnLogoutAction(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
+    
+    @IBAction func btnCameraAction(_ sender: Any) {
+        //Create the UIImage
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        //Save it to the camera roll
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+    }
+    
     // MARK: -
     // MARK: Object Methods
     
@@ -239,36 +253,30 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("MapVC(viewDidLoad)")
         self.motionManager.startGyroUpdates()
         self.motionManager.startAccelerometerUpdates()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("MapVC(viewWillAppear)")
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
-        print("MapVC(viewDidAppear)")
-        self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(MapVC.update), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(VehicleTrackVC.update), userInfo: nil, repeats: true)
         self.loadMapView()
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("MapVC(viewWillDisappear)")
         self.timer.invalidate()
         self.stopUpdatingMapLocation()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("MapVC(viewDidDisappear)")
-        
+        super.viewDidDisappear(animated)        
     }
     
     override func didReceiveMemoryWarning() {

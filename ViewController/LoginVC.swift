@@ -8,12 +8,9 @@
 import UIKit
 
 class LoginVC: UIViewController {
-    @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var lblPassword: UILabel!
     
-    @IBOutlet weak var btnRegister: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
     
     // MARK: -
@@ -41,14 +38,6 @@ class LoginVC: UIViewController {
 
     @IBAction func touchDown(_ sender: Any) {
         view.endEditing(true)
-    }
-    
-    @IBAction func btnRegisterAction(_ sender: Any) {
-        print("Not registered!")
-        let singUpVC = UIStoryboard.init(name: StoryboardName.MAIN, bundle: nil).instantiateViewController(withIdentifier: StoryboardId.SIGNUP_VC) as! SignUpVC
-        self.navigationController?.pushViewController(singUpVC, animated: false)
-
-        
     }
 
     // MARK: -

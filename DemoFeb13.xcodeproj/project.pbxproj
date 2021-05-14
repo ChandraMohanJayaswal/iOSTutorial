@@ -24,8 +24,7 @@
 		97816C2725D76D0800D1C605 /* DemoFeb13UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97816C2625D76D0800D1C605 /* DemoFeb13UITests.swift */; };
 		97816C5225D7787E00D1C605 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97816C5125D7787E00D1C605 /* LoginVC.swift */; };
 		97A6F40325E9EC8400686E5C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A6F40225E9EC8400686E5C /* Home.storyboard */; };
-		97A6F40825E9ED2A00686E5C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F40725E9ED2A00686E5C /* HomeVC.swift */; };
-		97A6F40D25E9EE4900686E5C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F40C25E9EE4900686E5C /* MapVC.swift */; };
+		97A6F40D25E9EE4900686E5C /* VehicleTrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F40C25E9EE4900686E5C /* VehicleTrackVC.swift */; };
 		97A6F41225E9EE5C00686E5C /* GyroscopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */; };
 		97A6F41725E9EE6E00686E5C /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */; };
 		97A6F41C25E9F08900686E5C /* DemoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */; };
@@ -76,8 +75,7 @@
 		97816C2825D76D0800D1C605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97816C5125D7787E00D1C605 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		97A6F40225E9EC8400686E5C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		97A6F40725E9ED2A00686E5C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		97A6F40C25E9EE4900686E5C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		97A6F40C25E9EE4900686E5C /* VehicleTrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTrackVC.swift; sourceTree = "<group>"; };
 		97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeVC.swift; sourceTree = "<group>"; };
 		97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTabbarController.swift; sourceTree = "<group>"; };
@@ -192,8 +190,7 @@
 			children = (
 				97816C5125D7787E00D1C605 /* LoginVC.swift */,
 				97644B4125E0A8B100A1FF82 /* SignUpVC.swift */,
-				97A6F40725E9ED2A00686E5C /* HomeVC.swift */,
-				97A6F40C25E9EE4900686E5C /* MapVC.swift */,
+				97A6F40C25E9EE4900686E5C /* VehicleTrackVC.swift */,
 				97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */,
 				97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */,
 				97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */,
@@ -352,12 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A6F40D25E9EE4900686E5C /* MapVC.swift in Sources */,
+				97A6F40D25E9EE4900686E5C /* VehicleTrackVC.swift in Sources */,
 				97644B4825E0B6E800A1FF82 /* Constants.swift in Sources */,
 				97A6F41C25E9F08900686E5C /* DemoTabbarController.swift in Sources */,
 				97644B5625E0BB3000A1FF82 /* Validateion.swift in Sources */,
 				97644B4225E0A8B100A1FF82 /* SignUpVC.swift in Sources */,
-				97A6F40825E9ED2A00686E5C /* HomeVC.swift in Sources */,
 				97644B5B25E0BC6A00A1FF82 /* Util.swift in Sources */,
 				97644B5125E0BA8F00A1FF82 /* User.swift in Sources */,
 				97A6F41225E9EE5C00686E5C /* GyroscopeVC.swift in Sources */,

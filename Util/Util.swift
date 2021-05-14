@@ -13,4 +13,5 @@ class Util: NSObject {
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
         return emailPredicate.evaluate(with: enteredEmail)
     }
+
 }

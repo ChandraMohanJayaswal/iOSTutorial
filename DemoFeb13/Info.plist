@@ -2,15 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App needs to save caputred screen shot in Poto Library</string>
 	<key>NSLocationAlwaysAndWhenInUsageDescription</key>
-	<string>We&apos;R Local needs your location to find or post store deals close to you.
+	<string>App needs your location to find or post store deals close to you.
 We&apos;R Local needs your location to find or post store deals close to you.
 </string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We&apos;R Local needs your location to find or post store deals close to you.
+	<string>App needs your location to find or post store deals close to you.
 </string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We&apos;R Local needs your location to find or post store deals close to you.
+	<string>App needs your location to find or post store deals close to you.
         
         Default radius is 3 miles and can be configured.
         
