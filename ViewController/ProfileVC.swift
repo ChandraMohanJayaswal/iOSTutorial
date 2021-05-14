@@ -1,5 +1,5 @@
 //
-//  MenuVC.swift
+//  ProfileVC.swift
 //  DemoFeb13
 //
 //  Created by Chandra Jayaswal on 4/3/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var imgProfile: UIImageView!
     
     // MARK: -

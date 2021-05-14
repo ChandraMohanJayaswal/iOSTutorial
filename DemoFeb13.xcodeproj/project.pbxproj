@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		971CE06E26181033006609B5 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE06D26181033006609B5 /* MenuVC.swift */; };
+		971CE06E26181033006609B5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971CE06D26181033006609B5 /* ProfileVC.swift */; };
 		9747B0E3262A7785003E0FD3 /* CSY3029-A2-2021.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9747B0E2262A7785003E0FD3 /* CSY3029-A2-2021.pdf */; };
 		97644B4225E0A8B100A1FF82 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97644B4125E0A8B100A1FF82 /* SignUpVC.swift */; };
 		97644B4825E0B6E800A1FF82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97644B4725E0B6E800A1FF82 /* Constants.swift */; };
@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		971CE06D26181033006609B5 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		971CE06D26181033006609B5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9747B0E2262A7785003E0FD3 /* CSY3029-A2-2021.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CSY3029-A2-2021.pdf"; sourceTree = "<group>"; };
 		97644B4125E0A8B100A1FF82 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		97644B4725E0B6E800A1FF82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 				97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */,
 				97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */,
 				97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */,
-				971CE06D26181033006609B5 /* MenuVC.swift */,
+				971CE06D26181033006609B5 /* ProfileVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 				97A6F41725E9EE6E00686E5C /* AboutUsVC.swift in Sources */,
 				97816C5225D7787E00D1C605 /* LoginVC.swift in Sources */,
 				97DFE5BA2605978200236C38 /* MKMapView+Extension.swift in Sources */,
-				971CE06E26181033006609B5 /* MenuVC.swift in Sources */,
+				971CE06E26181033006609B5 /* ProfileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
