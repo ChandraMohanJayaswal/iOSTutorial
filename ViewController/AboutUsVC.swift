@@ -20,6 +20,19 @@ class AboutUsVC: UIViewController {
     // MARK: -
     // MARK: IBAction Methods Methods
     
+    @IBAction func btnLogoutAction(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
+    
+    @IBAction func btnCameraAction(_ sender: Any) {
+        //Create the UIImage
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        //Save it to the camera roll
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+    }
 
 
     // MARK: -

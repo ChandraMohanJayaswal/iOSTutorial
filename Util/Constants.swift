@@ -21,7 +21,7 @@ struct StoryboardId {
     static let HOME_VC          = "HomeVC"
     static let VEHICLE_TRACK_VC = "VehicleTrackVC"
     static let ABOUTUS_VC       = "AboutUsVC"
-    static let GYROSCOPE_VC     = "GyroscopeVC"
+    static let GYROSCOPE_VC     = "GeophysicsVC"
     static let PROFILE_VC          = "ProfileVC"
     static let DEMO_TAB_BAR     = "DemoTabbarController"
 }

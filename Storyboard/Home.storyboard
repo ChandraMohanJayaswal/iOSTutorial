@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQr-y3-M02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27.536231884057973" y="-443.30357142857139"/>
+            <point key="canvasLocation" x="-17" y="-56"/>
         </scene>
         <!--About Us-->
         <scene sceneID="iJ8-Iv-PHT">
@@ -194,7 +194,7 @@
                                         </constraints>
                                         <state key="normal" image="camera"/>
                                         <connections>
-                                            <action selector="btnCameraAction:" destination="OfX-Jg-kdA" eventType="touchUpInside" id="BKn-zB-cjy"/>
+                                            <action selector="btnCameraAction:" destination="IiC-jw-yXj" eventType="touchUpInside" id="ZeY-fO-I2q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-l0-bUv" userLabel="btnLogout">
@@ -206,7 +206,7 @@
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="square.and.arrow.up" catalog="system"/>
                                         <connections>
-                                            <action selector="btnLogoutAction:" destination="OfX-Jg-kdA" eventType="touchUpInside" id="fMD-eB-gPc"/>
+                                            <action selector="btnLogoutAction:" destination="IiC-jw-yXj" eventType="touchUpInside" id="Nbn-tG-OY3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -236,12 +236,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1G-rQ-aUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755" y="699"/>
+            <point key="canvasLocation" x="1425" y="-56"/>
         </scene>
-        <!--Gyroscope-->
+        <!--Geophysics-->
         <scene sceneID="snS-fQ-S1n">
             <objects>
-                <viewController restorationIdentifier="GyroscopeVC" storyboardIdentifier="GyroscopeVC" id="fIv-tp-8gl" customClass="GyroscopeVC" customModule="DemoFeb13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GeophysicsVC" storyboardIdentifier="GeophysicsVC" id="fIv-tp-8gl" customClass="GeophysicsVC" customModule="DemoFeb13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p52-wX-HFE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihG-Ku-fUK" userLabel="headerView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gyroscope" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqa-zk-Cm4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geophysics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqa-zk-Cm4">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -265,7 +265,7 @@
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="square.and.arrow.up" catalog="system"/>
                                         <connections>
-                                            <action selector="btnLogoutAction:" destination="OfX-Jg-kdA" eventType="touchUpInside" id="Aux-Cb-BgA"/>
+                                            <action selector="btnLogoutAction:" destination="fIv-tp-8gl" eventType="touchUpInside" id="cVl-qa-NY4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tn-CB-jhW" userLabel="btnCamera">
@@ -277,7 +277,7 @@
                                         </constraints>
                                         <state key="normal" image="camera"/>
                                         <connections>
-                                            <action selector="btnCameraAction:" destination="OfX-Jg-kdA" eventType="touchUpInside" id="Twk-T0-Ind"/>
+                                            <action selector="btnCameraAction:" destination="fIv-tp-8gl" eventType="touchUpInside" id="PIa-AR-kac"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -305,11 +305,11 @@
                             <constraint firstItem="ihG-Ku-fUK" firstAttribute="leading" secondItem="p52-wX-HFE" secondAttribute="leading" id="UFk-ah-Fsb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gyroscope" image="xmark.seal.fill" catalog="system" id="elX-Km-GhU"/>
+                    <tabBarItem key="tabBarItem" title="Geophysics" image="physics_tab" id="elX-Km-GhU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bu-aa-UFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="222"/>
+            <point key="canvasLocation" x="729" y="-56"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ODk-oJ-P2a">
@@ -319,12 +319,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-Qy-af0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-Qy-af0">
                                 <rect key="frame" x="87" y="104" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="02E-gJ-JVn"/>
                                     <constraint firstAttribute="height" constant="240" id="dc7-hf-5HV"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG3-cK-iay" userLabel="btnCamera">
                                 <rect key="frame" x="192" y="352" width="30" height="30"/>
@@ -343,7 +351,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnCameraAction:" destination="Ylp-fB-jxx" eventType="touchUpInside" id="w1E-py-JPL"/>
+                                    <action selector="btnProfileAction:" destination="Ylp-fB-jxx" eventType="touchUpInside" id="wHK-m7-6BA"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gry-MF-Y4Z" userLabel="headerView">
@@ -365,7 +373,7 @@
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="square.and.arrow.up" catalog="system"/>
                                         <connections>
-                                            <action selector="btnLogoutAction:" destination="OfX-Jg-kdA" eventType="touchUpInside" id="4GD-cC-e7t"/>
+                                            <action selector="btnLogoutAction:" destination="Ylp-fB-jxx" eventType="touchUpInside" id="8RB-cW-zwT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1s2-ZX-Jfa" userLabel="btnCamera">
@@ -377,7 +385,7 @@
                                         </constraints>
                                         <state key="normal" image="camera"/>
                                         <connections>
-                                            <action selector="btnCameraAction:" destination="OfX-Jg-kdA" eventType="touchUpInside" id="iC4-eI-uQp"/>
+                                            <action selector="btnCameraAction:" destination="Ylp-fB-jxx" eventType="touchUpInside" id="HwL-tq-nAH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -414,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ike-rl-qeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-784" y="-734"/>
+            <point key="canvasLocation" x="2141" y="-56"/>
         </scene>
         <!--Demo Tabbar Controller-->
         <scene sceneID="fLo-zY-lxl">
@@ -441,10 +449,10 @@
         <image name="camera" width="15" height="15"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="physics_tab" width="30" height="30"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="track" width="30" height="30"/>
         <image name="user" width="42" height="42"/>
-        <image name="xmark.seal.fill" catalog="system" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

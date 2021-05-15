@@ -25,7 +25,7 @@
 		97816C5225D7787E00D1C605 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97816C5125D7787E00D1C605 /* LoginVC.swift */; };
 		97A6F40325E9EC8400686E5C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A6F40225E9EC8400686E5C /* Home.storyboard */; };
 		97A6F40D25E9EE4900686E5C /* VehicleTrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F40C25E9EE4900686E5C /* VehicleTrackVC.swift */; };
-		97A6F41225E9EE5C00686E5C /* GyroscopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */; };
+		97A6F41225E9EE5C00686E5C /* GeophysicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41125E9EE5C00686E5C /* GeophysicsVC.swift */; };
 		97A6F41725E9EE6E00686E5C /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */; };
 		97A6F41C25E9F08900686E5C /* DemoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */; };
 		97DFE5BA2605978200236C38 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DFE5B92605978200236C38 /* MKMapView+Extension.swift */; };
@@ -76,7 +76,7 @@
 		97816C5125D7787E00D1C605 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		97A6F40225E9EC8400686E5C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		97A6F40C25E9EE4900686E5C /* VehicleTrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTrackVC.swift; sourceTree = "<group>"; };
-		97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeVC.swift; sourceTree = "<group>"; };
+		97A6F41125E9EE5C00686E5C /* GeophysicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeophysicsVC.swift; sourceTree = "<group>"; };
 		97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTabbarController.swift; sourceTree = "<group>"; };
 		97DFE5B92605978200236C38 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				97816C5125D7787E00D1C605 /* LoginVC.swift */,
 				97644B4125E0A8B100A1FF82 /* SignUpVC.swift */,
 				97A6F40C25E9EE4900686E5C /* VehicleTrackVC.swift */,
-				97A6F41125E9EE5C00686E5C /* GyroscopeVC.swift */,
+				97A6F41125E9EE5C00686E5C /* GeophysicsVC.swift */,
 				97A6F41625E9EE6E00686E5C /* AboutUsVC.swift */,
 				97A6F41B25E9F08900686E5C /* DemoTabbarController.swift */,
 				971CE06D26181033006609B5 /* ProfileVC.swift */,
@@ -356,7 +356,7 @@
 				97644B4225E0A8B100A1FF82 /* SignUpVC.swift in Sources */,
 				97644B5B25E0BC6A00A1FF82 /* Util.swift in Sources */,
 				97644B5125E0BA8F00A1FF82 /* User.swift in Sources */,
-				97A6F41225E9EE5C00686E5C /* GyroscopeVC.swift in Sources */,
+				97A6F41225E9EE5C00686E5C /* GeophysicsVC.swift in Sources */,
 				97816C0525D76D0500D1C605 /* AppDelegate.swift in Sources */,
 				97816C0725D76D0500D1C605 /* SceneDelegate.swift in Sources */,
 				97A6F41725E9EE6E00686E5C /* AboutUsVC.swift in Sources */,

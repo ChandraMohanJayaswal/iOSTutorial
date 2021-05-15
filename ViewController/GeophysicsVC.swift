@@ -1,5 +1,5 @@
 //
-//  GyroscopeVC.swift
+//  GeophysicsVC.swift
 //  DemoFeb13
 //
 //  Created by Chandra Jayaswal on 2/27/21.
@@ -8,7 +8,7 @@
 import UIKit
 import CoreMotion
 
-class GyroscopeVC: UIViewController {
+class GeophysicsVC: UIViewController {
     let motionManager = CMMotionManager()
     var timer: Timer!
 
@@ -41,6 +41,19 @@ class GyroscopeVC: UIViewController {
     // MARK: -
     // MARK: IBAction Methods Methods
     
+    @IBAction func btnLogoutAction(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
+    
+    @IBAction func btnCameraAction(_ sender: Any) {
+        //Create the UIImage
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        //Save it to the camera roll
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+    }
 
 
     // MARK: -
@@ -72,7 +85,7 @@ class GyroscopeVC: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
-        self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(GyroscopeVC.update), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(GeophysicsVC.update), userInfo: nil, repeats: true)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
