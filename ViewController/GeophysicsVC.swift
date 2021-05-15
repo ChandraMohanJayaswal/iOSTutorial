@@ -37,6 +37,27 @@ class GeophysicsVC: UIViewController {
     // MARK: -
     // MARK: Public Utility Methods
 
+    
+    func showShakeAlert(){
+        let alert = UIAlertController(title: "Alert", message: "Shake was detected.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alertAction) in
+            switch alertAction.style{
+                case .default:
+                    print("default")
+                
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                @unknown default:
+                    print("unknown")
+            }
+        }))
+        self.present(alert, animated: true) {
+            //If anything need to do after presenting alert view then do here otherwise just ignore it.
+        }
+    }
 
     // MARK: -
     // MARK: IBAction Methods Methods
@@ -104,7 +125,23 @@ class GeophysicsVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
     }
+    
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        //
+        print(motion)
+        if motion == .motionShake {
+           print("Shake was detected")
+            self.showShakeAlert()
+        }
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        //  \
+    }
 
+    override func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        //
+    }
     // MARK: -
     // MARK: Delegate Methods
     

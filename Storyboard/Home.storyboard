@@ -223,20 +223,113 @@
                                     <constraint firstItem="qOs-yk-8aO" firstAttribute="centerY" secondItem="ohT-dt-Fde" secondAttribute="centerY" id="yPw-xL-aDu"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etC-jS-6yL">
+                                <rect key="frame" x="20" y="108" width="374" height="526"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Vehicle Track Screen
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="17"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- Detect vehicle speed. Speed can be configured using slider. Lets say user has configured speed at 6.0 and vehicle speed exceeds then user will see alert message. It can be extended to play alarm sound or can be vibrate phone.
+- Detect user current location.
+- Show route between current location and destination. Destination is hardcoded and can be extended so that user can set destination mannualy.
+- Gyroscope data and Gforce value is shown.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- Take screen shot of current screen (will be saved in Photo Library)
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Geophysics Screen
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="17"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- Detect shake effect in this screen.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- Take screen shot of current screen (will be saved in Photo Library)
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Profile Screen
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="17"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- General information about app creator.
+- Updating profile image using Photo Library or Camera.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="- Take screen shot of current screen (will be saved in Photo Library)">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YbE-4s-ITc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ohT-dt-Fde" firstAttribute="leading" secondItem="YbE-4s-ITc" secondAttribute="leading" id="6Yw-Rq-5r7"/>
+                            <constraint firstItem="YbE-4s-ITc" firstAttribute="trailing" secondItem="etC-jS-6yL" secondAttribute="trailing" constant="20" id="O2G-mZ-xJz"/>
                             <constraint firstAttribute="trailing" secondItem="ohT-dt-Fde" secondAttribute="trailing" id="P86-Uj-GBZ"/>
                             <constraint firstItem="ohT-dt-Fde" firstAttribute="top" secondItem="YbE-4s-ITc" secondAttribute="top" id="RrD-hq-crO"/>
+                            <constraint firstItem="etC-jS-6yL" firstAttribute="top" secondItem="ohT-dt-Fde" secondAttribute="bottom" constant="20" id="SaX-rz-AU8"/>
+                            <constraint firstItem="etC-jS-6yL" firstAttribute="leading" secondItem="YbE-4s-ITc" secondAttribute="leading" constant="20" id="yTO-NO-8m5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" image="info" catalog="system" id="fz2-Xr-wpZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1G-rQ-aUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="-56"/>
+            <point key="canvasLocation" x="1424.6376811594205" y="-56.25"/>
         </scene>
         <!--Geophysics-->
         <scene sceneID="snS-fQ-S1n">
@@ -296,6 +389,17 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="wrt-vt-5d8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cv-c7-nMY">
+                                <rect key="frame" x="20" y="411" width="374" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="2BS-Pm-5pP"/>
+                                </constraints>
+                                <string key="text">- Detect shake effect in this screen.
+- Shortcut for shake is Control+Command+Z in Simulator</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w2E-Yd-EbU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -303,13 +407,17 @@
                             <constraint firstItem="ihG-Ku-fUK" firstAttribute="top" secondItem="w2E-Yd-EbU" secondAttribute="top" id="81f-4F-Vtd"/>
                             <constraint firstItem="w2E-Yd-EbU" firstAttribute="trailing" secondItem="ihG-Ku-fUK" secondAttribute="trailing" id="RY7-Q2-O6F"/>
                             <constraint firstItem="ihG-Ku-fUK" firstAttribute="leading" secondItem="p52-wX-HFE" secondAttribute="leading" id="UFk-ah-Fsb"/>
+                            <constraint firstItem="5Cv-c7-nMY" firstAttribute="centerX" secondItem="p52-wX-HFE" secondAttribute="centerX" id="VWo-Tr-ctb"/>
+                            <constraint firstItem="5Cv-c7-nMY" firstAttribute="leading" secondItem="w2E-Yd-EbU" secondAttribute="leading" constant="20" id="e38-oP-l2U"/>
+                            <constraint firstItem="5Cv-c7-nMY" firstAttribute="centerY" secondItem="p52-wX-HFE" secondAttribute="centerY" id="j4U-fP-Az8"/>
+                            <constraint firstItem="w2E-Yd-EbU" firstAttribute="trailing" secondItem="5Cv-c7-nMY" secondAttribute="trailing" constant="20" id="mBd-Mj-Piu"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Geophysics" image="physics_tab" id="elX-Km-GhU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bu-aa-UFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="-56"/>
+            <point key="canvasLocation" x="728.98550724637687" y="-56.25"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ODk-oJ-P2a">
@@ -436,8 +544,8 @@
                     <connections>
                         <segue destination="OfX-Jg-kdA" kind="relationship" relationship="viewControllers" id="ira-yb-6cN"/>
                         <segue destination="fIv-tp-8gl" kind="relationship" relationship="viewControllers" id="cSF-Yp-5ZD"/>
-                        <segue destination="IiC-jw-yXj" kind="relationship" relationship="viewControllers" id="75k-7K-e0M"/>
                         <segue destination="Ylp-fB-jxx" kind="relationship" relationship="viewControllers" id="6LB-XP-2Id"/>
+                        <segue destination="IiC-jw-yXj" kind="relationship" relationship="viewControllers" id="75k-7K-e0M"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGH-87-H65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

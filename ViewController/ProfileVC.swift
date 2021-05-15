@@ -25,7 +25,7 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                 print("Camera not available")
             }
         }))
-        actionSheet.addAction(UIAlertAction(title:"PhotoLibrary", style: .default, handler: { (action: UIAlertAction) in
+        actionSheet.addAction(UIAlertAction(title:"Photo Library", style: .default, handler: { (action: UIAlertAction) in
             let imagePickerController = UIImagePickerController()
             imagePickerController.delegate = self
             imagePickerController.sourceType = .photoLibrary
